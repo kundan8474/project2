@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="3dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@id/clinic_name"
+                    android:layout_marginStart="5dp"
+                    android:text="Clinic Name"
+                    android:textSize="18sp"
+                    android:textColor="@color/md_grey_800"/>
+
+                <LinearLayout
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_location_map_blue"
+                        android:background="#ffffff"
+                        android:id="@+id/locate"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:gravity="center_vertical"
+                        android:id="@+id/clinic_location"
+                        android:textSize="20sp"
+                        android:textColor="@color/md_grey_500" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_call"
+                        android:background="#ffffff"
+                        android:id="@+id/call_clinic"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Clinic Contact"
+                        android:gravity="center_vertical"
+                        android:id="@+id/clinic_number"
+                        android:textSize="16dp"
+                        android:textColor="@color/md_grey_500" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:text="Explore"
+                    android:background="@drawable/custom_button_shape_small"
+                    android:id="@+id/explore_button"
+                    />
+                </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <include
+        android:id="@+id/toolbar_set_location"
+        layout="@layout/tool_bar_set_location"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    android:layout_below="@+id/toolbar">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#90424242"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="6dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp">
+
+                <AutoCompleteTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/city"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:textColorHint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:hint="City"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp">
+
+                <AutoCompleteTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:id="@+id/speciality"
+                    android:textColorHint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:hint="Speciality (Optional)"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp">
+
+                <AutoCompleteTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clinic_name"
+                    android:layout_marginTop="16dp"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:textColorHint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:hint="Clinic Name (Optional)"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/orange_button_click_color_changer"
+                android:text="Search"
+                android:elevation="10dp"
+                android:id="@+id/search_button"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

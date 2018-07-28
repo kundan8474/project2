@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log_in">
+
+    <RelativeLayout
+        android:layout_below="@id/general_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#90424242"
+        android:padding="15dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#25ffffff"
+            android:elevation="6dp"
+            android:padding="15dp">
+
+            <ImageView
+                android:background="@drawable/app_logo"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/orange_button_click_color_changer"
+                android:text="Login"
+                android:id="@+id/login_button"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/custom_button_shape_green"
+                android:text="Register"
+                android:id="@+id/register_button"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/linkSignup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Skip Now"
+                        android:textColor="@color/md_blue_800"
+                        android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

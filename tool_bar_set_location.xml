@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_set_location"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/toolbar"
+        android:gravity="left"
+        android:hint="Search Clinics"
+        android:elevation="2dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:background="?attr/colorPrimary"
+        android:src="@drawable/ic_location_white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#ffffff"
+        android:text="Set Location"/>
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorPrimary"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+    <!--this layout file is used in user profile activity-->
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user"
+            android:scaleType="centerCrop"/>
+        <TextView android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="Let's quickly build your profile"
+            android:textSize="20sp"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="3dp"
+           android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.3"
+            android:background="@color/md_grey_200">
+        </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="2dp"
+               android:layout_weight="0.4"
+               android:background="@color/md_green_400">
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="1dp"
+               android:layout_weight="0.3"
+               android:background="@color/md_grey_200">
+           </LinearLayout>
+       </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:digits="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+                android:hint="First Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:digits="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+                android:hint="Last Name"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="3"
+                android:imeOptions="actionDone"
+                android:digits="1234567890"
+                android:hint="Age"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/buttonDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orange_button_click_color_changer"
+            android:textColor="#ffffff"
+            android:layout_marginTop="24dp"
+            android:drawableLeft="@drawable/ic_done"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Done"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView android:id="@+id/link_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip for now"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:drawableRight="@drawable/ic_right_arrow"
+                android:textColor="@color/md_blue_800"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
